@@ -3,6 +3,12 @@ import argparse
 import coremltools
 from keras.models import load_model
 
+'''
+TODO
+Batch conversion
+from model
+'''
+
 parser = argparse.ArgumentParser()
 parser.add_argument('--source', help='file to convert to Apple CoreML model')
 parser.add_argument('--name', help='name to give to the coreML model file')
