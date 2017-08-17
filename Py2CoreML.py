@@ -16,7 +16,6 @@ args = parser.parse_args()
 
 coremlName = args.name
 filename = args.source
-print (args.source, args.name)
 model = load_model(filepath=args.source)
 coreml_model = coremltools.converters.keras.convert(model)
 coreml_model.save(coremlName + '.mlmodel')
